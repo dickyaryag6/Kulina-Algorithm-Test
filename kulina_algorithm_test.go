@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-// FUNGSI NOMOR 1
+// FUNGSI NOMOR 1 : sockMerchant
 func sockMerchant(socks []int) int {
 	pairOfSocks := map[int]int{}
 	result := 0
@@ -24,7 +24,7 @@ func sockMerchant(socks []int) int {
 	return result
 }
 
-// FUNGSI NOMOR 2
+// FUNGSI NOMOR 2 : countingValleys
 func countingValleys(steps []string) int {
 	level_before := 0
     level := 0
@@ -43,7 +43,7 @@ func countingValleys(steps []string) int {
 	return result
 }
 
-// FUNGSI NOMOR 3
+// FUNGSI NOMOR 3 : printZeros
 func printZeros(num int){
 	s :=strconv.Itoa(num)
 	length := len(s)-1
@@ -66,7 +66,7 @@ func changeBool(n bool) bool {
 	}
 }
 
-// FUNGSI NOMOR 4
+// FUNGSI NOMOR 4 : lampSwitch
 func lampSwitch(numOfLamps int) []bool {
 	lamps := make([]bool, numOfLamps)
 	for i := 0; i < numOfLamps; i++ {
@@ -83,11 +83,11 @@ func lampSwitch(numOfLamps int) []bool {
 func main() {
 	// NOMOR 1
 	socks := []int{10,20,20,10,10,30,50,10,20}
-	sockMerchant(socks)
+	fmt.Println(sockMerchant(socks))
 
 	// NOMOR 2
 	steps := []string{"U", "D", "D", "U", "U", "D", "D", "U"}
-	countingValleys(steps)
+	fmt.Println(countingValleys(steps))
 
 	// NOMOR 3
 	number := 1345679
@@ -95,5 +95,5 @@ func main() {
 
 	// NOMOR 4
 	numOfLamps := 100
-	lampSwitch(numOfLamps)
+	fmt.Println(lampSwitch(numOfLamps))
 }
