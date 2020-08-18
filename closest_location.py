@@ -17,6 +17,8 @@ class Customer:
 
 # FUNCTION TO FIND DISTANCE USING GREAT DISTANCE CIRCLE FORMULA
 def distance(customer_latitude, customer_longitude, supplier_latitude, supplier_longitude):
+    earth_radius = 6371.0
+    
     customer_latitude = degree_to_radian(customer_latitude)
     customer_longitude = degree_to_radian(customer_longitude)
 
@@ -47,8 +49,6 @@ def assign_order(customer, list_of_suppliers):
 
 
 # --------------------------------------------------------------
-
-earth_radius = 6371.0
 
 supplier_A = Supplier("Supplier A", 12.986375, 77.043701)
 supplier_B = Supplier("Supplier B", 55.033, 78.27699)
