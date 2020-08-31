@@ -27,7 +27,7 @@ func sockMerchant(socks []int) int {
 // FUNGSI NOMOR 2 : countingValleys
 func countingValleys(steps []string) int {
 	level_before := 0
-    level := 0
+    	level := 0
 	result := 0
 	for _, step := range steps {
 		level_before = level
